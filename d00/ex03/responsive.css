@@ -1,4 +1,4 @@
-.textcenter {
+.text-center {
     text-align: center;
 }
 
@@ -6,7 +6,7 @@ h1 {
     font-size: 2.5vw;
 }
 
-.textresponsive {
+.text-responsive {
     font-size: 1.5vw;
 }
 
@@ -28,20 +28,20 @@ th, td {
     padding: 5px;
     height: 30px;
 }
-.elementsymbol {
+.element-symbol {
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
 }
-.elementinfo {
+.element-info {
     font-size: 1vw;
     text-align: justify;
     text-align-last: justify;
 }
-.alkalimetal {
+.alkali-metal {
     background-color: #ff9d9d;
 }
-.alkalineearthmetal {
+.alkaline-earth-metal {
     background-color: #ffdead;
 }
 .lanthanide {
@@ -50,21 +50,21 @@ th, td {
 .actinide {
     background-color: #ff99cc;
 }
-.transitionmetal {
+.transition-metal {
     background-color: #ffc0c0;
 }
-.post-transitionmetal {
+.post-transition-metal {
     background-color: #cccccc;
 }
 .metalloid {
     background-color: #cccc99;
 }
-.reactivenonmetal {
+.reactive-nonmetal {
     background-color: #f0ff8f;
 }
-.noblegas {
+.noble-gas {
     background-color: #c0ffff;
 }
-.unknownchemicalproperties {
+.unknown-chemical-properties {
     background-color: #e8e8e8;
 }
