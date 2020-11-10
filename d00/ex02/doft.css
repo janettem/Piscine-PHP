@@ -1,0 +1,151 @@
+body {
+    background-color: #505050;
+}
+
+.bar-content {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #000000;
+    padding: 5px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-content {
+    position: relative;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #909090;
+}
+
+#day_of_the_42 {
+    width: 500px;
+    height: auto;
+}
+
+#close {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#reload {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#loupe {
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+}
+
+.content {
+    width: 100%;
+}
+
+.bar-left {
+    float: left;
+    width: 20%;
+}
+
+.bar-left-content {
+    width: 100px;
+    height: 360px;
+    margin-left: auto;
+    background-color: #909090;
+}
+
+.bar-left-content > img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+#oeil {
+    border: 5px solid #ef0c0c;
+    border-radius: 5px;
+}
+
+.main {
+    float: left;
+    width: 60%;
+}
+
+.main-content {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #909090;
+}
+
+.bar-right {
+    float: left;
+    width: 20%;
+}
+
+.bar-right-content {
+    width: 100px;
+    height: 360px;
+    margin-right: auto;
+    background-color: #909090;
+}
+
+.bar-right-content > img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+#brick {
+    width: 100px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("resources/brick.jpg");
+    background-repeat: repeyt-y;
+}
+
+.text-block {
+    position: relative;
+    top: -75px;
+    left: -225px;
+    width: 450px;
+    height: 140px;
+    background-color: #88ff89;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+.text-big {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+
+.text-shadow {
+    text-shadow: 5px 5px 3px #f60b0b;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+#input-field {
+    width: 75%;
+}
