@@ -3,14 +3,16 @@
 
 if ($argc > 1)
 {
-    $array = preg_split("/ +/", $argv[1], -1, PREG_SPLIT_NO_EMPTY);
-    foreach ($array as $key=>$value)
+    if (($array = preg_split("/ +/", $argv[1], -1, PREG_SPLIT_NO_EMPTY)))
     {
-        if ($key > 0)
-            echo " ";
-        echo "$value";
+        foreach ($array as $key=>$value)
+        {
+            if ($key > 0)
+                echo " ";
+            echo "$value";
+        }
+        echo "\n";
     }
-    echo "\n";
 }
 
 ?>
