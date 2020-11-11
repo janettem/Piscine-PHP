@@ -13,7 +13,6 @@ if ($argc > 3)
     $n1 = str_replace(' ', '', $argv[1]);
     $op = str_replace(' ', '', $argv[2]);
     $n2 = str_replace(' ', '', $argv[3]);
-
     if (my_is_int($n1) && my_is_int($n2))
     {
         if ($op == "+")
