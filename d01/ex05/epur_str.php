@@ -9,7 +9,7 @@ if ($argc > 1)
         {
             if ($key > 0)
                 echo " ";
-            echo "$value";
+            echo $value;
         }
         echo "\n";
     }
