@@ -1,0 +1,14 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex represents a point in space.
+
+An instance is contructed from x, y and z coordinates:
+new Color( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+Also w coordinate and / or a color can be set:
+$white = new Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) );
+new Color( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0, 'w' => 1.0, 'color' => $white ) );
+
+The default value is 1.0 for w and white for color.
+
+Any other use is undefined behaviour.
+---------------------------------------------------------------------- Vertex ->
