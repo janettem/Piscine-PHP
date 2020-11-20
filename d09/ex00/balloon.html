@@ -1,0 +1,68 @@
+<!doctype html>
+    <head>
+    </head>
+    <body>
+        <div id="myDiv" style="width: 200px; height: 200px; background-color: red; border-radius: 100%;" onmouseenter="countEntries()" onclick="changeDiv('click');" onmouseleave="changeDiv('not click');"></div>
+
+        <script>
+            var entries = 0;
+            var lastClick = 0;
+
+            console.log("width: 200px;");
+            console.log("height: 200px;");
+            console.log("background-color: red;");
+            function changeSize(event) {
+                var size = parseInt(document.getElementById("myDiv").style.width, 10);
+                if (event == "click") {
+                    size += 10;
+                    if (size > 420) {
+                        size = 200;
+                    }
+                } else {
+                    size -= 5;
+                    if (size < 200) {
+                        size = 200;
+                    }
+                }
+                console.log("width: " + size + "px;");
+                document.getElementById("myDiv").style.width = size + "px";
+                console.log("height: " + size + "px;");
+                document.getElementById("myDiv").style.height = size + "px";
+            }
+
+            function changeColor(event) {
+                var colors = new Array("red", "green", "blue");
+                var color = document.getElementById("myDiv").style.backgroundColor;
+                var position = colors.indexOf(color);
+                if (event == "click") {
+                    position += 1;
+                    if (position > 2) {
+                        position = 0;
+                    }
+                } else {
+                    position -= 1;
+                    if (position < 0) {
+                        position = 2;
+                    }
+                }
+                console.log("background-color: " + colors[position] + ";");
+                document.getElementById("myDiv").style.backgroundColor = colors[position];
+            }
+
+            function changeDiv(event) {
+                if (event == "click") {
+                    lastClick = entries;
+                }
+                if (event == "click" || lastClick != entries) {
+                    changeSize(event);
+                    changeColor(event);
+                }
+            }
+
+            function countEntries() {
+                entries += 1;
+                return (entries);
+            }
+        </script>
+    </body>
+</html>
