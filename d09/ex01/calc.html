@@ -1,0 +1,75 @@
+<!doctype html>
+    <head>
+    </head>
+    <body>
+        <form action="calc.html" name="calc" onsubmit="myCalc()">
+            Number <input type="text" name="nbr1" value="" />
+            <br />
+            Operator <select name="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <br />
+            Number <input type="text" name="nbr2" value="" />
+            <br />
+            <input type=submit name="submit" value="Try me!" />
+        </form>
+
+        <script>
+            function doOp(nbr1, op, nbr2) {
+                var res = 0;
+
+                if (op == "+") {
+                    res = nbr1 + nbr2;
+                } else if (op == "-") {
+                    res = nbr1 - nbr2;
+                } else if (op == "*") {
+                    res = nbr1 * nbr2;
+                } else if (op == "/") {
+                    res = nbr1 / nbr2;
+                } else {
+                    res = nbr1 % nbr2;
+                }
+
+                return (res);
+            }
+
+            function myCalc() {
+                var nbr1 = document.forms["calc"]["nbr1"].value;
+                var op = document.forms["calc"]["op"].value;
+                var nbr2 = document.forms["calc"]["nbr2"].value;
+                var res = 0;
+
+                if (nbr1 == "" || isNaN(nbr1) || nbr2 == "" || isNaN(nbr2))
+                {
+                    alert("Error :(");
+                    return;
+                }
+
+                nbr1 = parseInt(nbr1, 10);
+                nbr2 = parseInt(nbr2, 10);
+
+                if (nbr1 < 0 || nbr2 < 0) {
+                    alert("Error :(");
+                    return;
+                }
+
+                if ((op == "/" || op == "%") && nbr2 == 0) {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                    return;
+                }
+
+                res = doOp(nbr1, op, nbr2);
+
+                console.log(res);
+                alert(res);
+            }
+
+            setInterval(function(){alert("Please, use me...");}, 30000);
+        </script>
+    </body>
+</html>
