@@ -1,2 +1,2 @@
 # Piscine-PHP
-In this project for @hivehelsinki, I learn the basic technologies of the web.
+In this project for @hivehelsinki, I learned the basic technologies of the web.
